@@ -1,0 +1,11 @@
+table:
+  name: doc
+  schema: public
+array_relationships:
+  - name: docItems
+    using:
+      foreign_key_constraint_on:
+        column: docId
+        table:
+          name: doc_item
+          schema: public

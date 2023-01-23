@@ -1,0 +1,2 @@
+CREATE TRIGGER gen_versionId BEFORE INSERT OR UPDATE ON public.doc_item
+    FOR EACH ROW EXECUTE FUNCTION gen_versionId();
